@@ -1,7 +1,9 @@
-PROMPT="%{$fg[red]%}~/sam%{$reset_color%} %{$fg[green]%}➜%{$reset_color%} "
-PROMPT+='$(git_prompt_info)'
+PROMPT='%{$fg[red]%}~/sam%{$reset_color%} %{$fg[green]%}➜%{$reset_color%} $(git_prompt_info)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[cyan]%}$(basename $(git rev-parse --show-toplevel 2>/dev/null) 2>/dev/null)@%{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}"
+git_prompt_info() {
+  if git rev-parse --git-dir > /dev/null 2>&1; then
+    local repo=$(basename $(git rev-parse --show-toplevel))
+    local branch=$(git branch --show-current 2>/dev/null)
+    echo "%{$fg[cyan]%}${repo}@%{$fg[green]%}${branch}%{$fg[blue]%}%{$reset_color%} "
+  fi
+}
