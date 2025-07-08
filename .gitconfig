@@ -1,10 +1,13 @@
+	
 [merge]
-	tool = vscode
+  tool = vscode
 [mergetool "vscode"]
-	cmd = "code --wait "
+  cmd = code --wait $MERGED
+[mergetool]
+  trustExitCode = true
 [diff]
-	tool = vscode
+  tool = vscode
 [difftool "vscode"]
-  cmd = "code --wait --reuse-window --diff $LOCAL $REMOTE"
+  cmd = code --wait --reuse-window --diff $LOCAL $REMOTE
 [difftool]
   prompt = false
