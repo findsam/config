@@ -1,0 +1,10 @@
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+  cmd = "code --wait --reuse-window --diff $LOCAL $REMOTE"
+[difftool]
+  prompt = false
