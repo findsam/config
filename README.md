@@ -1,1 +1,1 @@
-![TERMINAL](https://i.imgur.com/vNhLcXE.png)
+![TERMINAL](https://i.imgur.com/ImbYHAm.png)
