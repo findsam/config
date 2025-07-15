@@ -8,18 +8,18 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "workbench.colorCustomizations": {
-    "editor.background": "#000000",
-    "sideBar.background": "#000000",
-    "activityBar.background": "#000000",
-    "titleBar.activeBackground": "#000000",
-    "titleBar.inactiveBackground": "#000000",
-    "panel.background": "#000000",
-    "statusBar.background": "#000000",
-    "statusBar.noFolderBackground": "#000000",
-    "statusBar.debuggingBackground": "#000000",
-    "editorGroupHeader.tabsBackground": "#000000",
-    "tab.activeBackground": "#000000",
-    "tab.inactiveBackground": "#000000",
-    "tab.border": "#000000"
+    "editor.background": "#142b29",
+    "sideBar.background": "#142b29",
+    "activityBar.background": "#142b29",
+    "titleBar.activeBackground": "#142b29",
+    "titleBar.inactiveBackground": "#142b29",
+    "panel.background": "#142b29",
+    "statusBar.background": "#142b29",
+    "statusBar.noFolderBackground": "#142b29",
+    "statusBar.debuggingBackground": "#142b29",
+    "editorGroupHeader.tabsBackground": "#142b29",
+    "tab.activeBackground": "#142b29",
+    "tab.inactiveBackground": "#142b29",
+    "tab.border": "#142b29"
   }
 }
